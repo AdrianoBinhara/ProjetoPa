@@ -14,7 +14,14 @@
             <Frame Padding="0" Margin="0,40,0,0" IsClippedToBounds="True" HasShadow="False" CornerRadius="10" >
                 <SearchBar BackgroundColor="#F2F2F2" PlaceholderColor="LightGray" Placeholder="Search Items"/>
             </Frame>
-            
+            <CollectionView ItemsSource="{Binding SneakersList}">
+                <CollectionView.ItemsLayout Orientation="Vertical"/>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Name}" HeightRequest="100" WidthRequest="100"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
