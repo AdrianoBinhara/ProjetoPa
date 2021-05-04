@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoSneakersPA.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace ProjetoSneakersPA
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new SneakersPage();
         }
 
         protected override void OnStart()
