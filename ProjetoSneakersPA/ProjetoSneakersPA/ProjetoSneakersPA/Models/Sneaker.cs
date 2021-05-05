@@ -10,5 +10,7 @@ namespace ProjetoSneakersPA.Models
         public string Model { get; set; }
         public string Price { get; set; }
         public string Picture { get; set; }
+        public string Color { get; set; }
+        public string PriceColor { get; set; }
     }
 }
